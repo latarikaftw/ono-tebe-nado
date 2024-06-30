@@ -88,10 +88,15 @@
 
 .cover {
   position: relative; /* Обязательно указываем позиционирование родительского элемента */
+  width: 100%; /* Ширина секции */
+  height: 757px; /* Высота секции */
+  background-image: url(../images/cover.jpg); /* Добавляем фоновое изображение */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  background-position: center; /* Центрируем изображение */
+  background-size: cover; /* Масштабируем изображение чтобы покрывало весь блок */
 }
 
-.cover::after {
-  content: ""; /* Обязательно указываем содержимое для псевдоэлемента */
+.cover-overlay {
   position: absolute; /* Позиционируем абсолютно относительно родительского элемента */
   top: 0;
   left: 0;
@@ -104,4 +109,90 @@
     0,
     0.5
   ); /* Цвет фона с полупрозрачностью (здесь 50%) */
+}
+
+.cover-heading {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cover_ono_heading {
+  align-self: flex-start;
+  margin-top: 163px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  letter-spacing: 30px;
+}
+
+.cover_left_margin_heading {
+  display: inline-block;
+  margin-left: 30px;
+}
+.cover_tebe_heading {
+  align-self: center;
+  margin-top: -3px;
+  margin-bottom: 0px;
+  margin-left: -30px;
+  letter-spacing: 30px;
+}
+
+.cover_nado_heading {
+  align-self: flex-end;
+  margin-top: -10px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+}
+
+.cover_n_heading {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.cover_right_margin_heading {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.cover-subheading {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 3;
+  word-spacing: 19px;
+  margin-top: 139px;
+  margin-bottom: 20px;
+  margin-left: 78px;
+}
+
+.cover-button {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  align-self: flex-end;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: normal;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  cursor: pointer;
+  z-index: 3;
+  margin-top: 0px;
+  margin-left: 77px;
+  padding: 12px 27px;
 }

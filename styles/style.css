@@ -1,1 +1,107 @@
-/* место для вашего кода */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 293px;
+  font-size: 18px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header__links-container {
+  margin-right: 20px; /* Расстояние между списком ссылок и логотипом */
+}
+
+.header__logo-container {
+  margin-right: 20px; /* Расстояние между логотипом и адресом */
+}
+
+.header__address-container {
+  margin-right: 20px; /* Расстояние после блока с адресом */
+}
+
+.header__links-list {
+  display: flex;
+  align-items: start;
+  gap: 4px;
+  margin-right: 22px;
+  margin-left: 52px;
+  list-style: circle;
+}
+
+.header__links-list-item {
+  margin-right: 30px;
+}
+.header__links-list-item:first-child {
+  list-style: none; /* Убираем маркер у первого элемента списка */
+}
+
+.header__links-list-item:first-child .header__link {
+  text-decoration: none; /* Убираем подчеркивание у первой ссылки */
+}
+
+.header__links-list-item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  color: #000;
+
+  text-decoration: underline; /* Убираем подчеркивание у ссылок */
+  white-space: nowrap;
+}
+
+.header__logo {
+  display: block;
+  width: 134px; /* Ширина логотипа */
+  height: 104px; /* Высота логотипа */
+  margin-left: 0px;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 450px;
+}
+
+.address {
+  padding-right: 50px;
+  padding-left: 193px;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.address a {
+  font-style: normal;
+  line-height: 1;
+  text-decoration: underline;
+}
+
+.header__address_name {
+  display: inline-block;
+}
+
+.cover {
+  position: relative; /* Обязательно указываем позиционирование родительского элемента */
+}
+
+.cover::after {
+  content: ""; /* Обязательно указываем содержимое для псевдоэлемента */
+  position: absolute; /* Позиционируем абсолютно относительно родительского элемента */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Устанавливаем z-index, чтобы слой был поверх изображения */
+  width: 100%; /* Занимает всю ширину родительского элемента */
+  height: 100%; /* Занимает всю высоту родительского элемента */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Цвет фона с полупрозрачностью (здесь 50%) */
+}

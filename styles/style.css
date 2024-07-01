@@ -57,8 +57,8 @@
 
 .header__logo {
   display: block;
-  width: 134px; /* Ширина логотипа */
-  height: 104px; /* Высота логотипа */
+  width: 134px;
+  height: 104px;
   margin-left: 0px;
 }
 
@@ -88,13 +88,13 @@
 }
 
 .cover {
-  position: relative; /* Обязательно указываем позиционирование родительского элемента */
-  width: 100%; /* Ширина секции */
-  height: 757px; /* Высота секции */
-  background-image: url(../images/cover.jpg); /* Добавляем фоновое изображение */
-  background-repeat: no-repeat; /* Изображение не повторяется */
-  background-position: center; /* Центрируем изображение */
-  background-size: cover; /* Масштабируем изображение чтобы покрывало весь блок */
+  position: relative;
+  width: 100%;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .cover-overlay {
@@ -306,7 +306,7 @@
 .circle-container {
   position: relative;
   display: flex;
-  grid-column: 1 / 1; /* Растягивание на весь грид */
+  grid-column: 1 / 1;
   grid-row: 1 / 1;
   justify-content: center;
   align-items: center;

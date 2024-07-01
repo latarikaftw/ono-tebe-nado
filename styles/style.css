@@ -13,15 +13,15 @@
 }
 
 .header__links-container {
-  margin-right: 20px; /* Расстояние между списком ссылок и логотипом */
+  margin-right: 20px;
 }
 
 .header__logo-container {
-  margin-right: 20px; /* Расстояние между логотипом и адресом */
+  margin-right: 20px;
 }
 
 .header__address-container {
-  margin-right: 20px; /* Расстояние после блока с адресом */
+  margin-right: 20px;
 }
 
 .header__links-list {
@@ -37,11 +37,11 @@
   margin-right: 30px;
 }
 .header__links-list-item:first-child {
-  list-style: none; /* Убираем маркер у первого элемента списка */
+  list-style: none;
 }
 
 .header__links-list-item:first-child .header__link {
-  text-decoration: none; /* Убираем подчеркивание у первой ссылки */
+  text-decoration: none;
 }
 
 .header__links-list-item:last-child {
@@ -51,7 +51,7 @@
 .header__link {
   color: #000;
 
-  text-decoration: underline; /* Убираем подчеркивание у ссылок */
+  text-decoration: underline;
   white-space: nowrap;
 }
 
@@ -97,18 +97,13 @@
 }
 
 .cover-overlay {
-  position: absolute; /* Позиционируем абсолютно относительно родительского элемента */
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; /* Устанавливаем z-index, чтобы слой был поверх изображения */
-  width: 100%; /* Занимает всю ширину родительского элемента */
-  height: 100%; /* Занимает всю высоту родительского элемента */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Цвет фона с полупрозрачностью (здесь 50%) */
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .cover-heading {
@@ -164,133 +159,132 @@
 }
 
 .cover-subheading {
-  display: inline-block;
   position: relative;
-  text-transform: uppercase;
-  color: white;
-  font-size: 22px;
-  font-weight: normal;
-  text-align: left;
-  text-transform: uppercase;
   z-index: 3;
-  word-spacing: 19px;
+  display: inline-block;
   margin-top: 139px;
   margin-bottom: 20px;
   margin-left: 78px;
+  color: white;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: left;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  word-spacing: 19px;
 }
 
 .cover-button {
-  display: inline-block;
   position: relative;
-  text-transform: uppercase;
-  align-self: flex-end;
-  padding: 10px 20px;
-  font-size: 22px;
-  font-weight: normal;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid white;
-  cursor: pointer;
   z-index: 3;
+  display: inline-block;
+  align-self: flex-end;
   margin-top: 0px;
   margin-left: 77px;
+  border: 1px solid white;
+  padding: 10px 20px;
   padding: 12px 27px;
+  color: white;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 .lots {
   padding: 20px;
-  background-color: #ffffff; /* Фоновый цвет для секции */
+  background-color: #ffffff;
 }
 
 .lots__heading {
   margin-top: 160px;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: start;
   margin-bottom: 26px;
   margin-left: 44px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: start;
+  text-transform: uppercase;
 }
 
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
   justify-content: center;
-  list-style: none;
-  padding: 0;
+  gap: 25px;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .lots__card-list-item {
-  width: 334px; /* Ширина каждой карточки */
+  width: 334px;
   list-style: none;
 }
 
 .card-link {
-  text-decoration: none; /* Убираем подчеркивание ссылок */
+  text-decoration: none;
 }
 
 .card {
-  background-color: #fff; /* Фоновый цвет карточки */
-  padding: 20px; /* Внутренние отступы */
-  height: 563px; /* Фиксированная высота карточки */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Распределение контента по вертикали */
+  justify-content: space-between;
+  height: 563px;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .card__title {
   z-index: 2;
-  font-size: 22px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-weight: bold;
-  color: #fff;
   margin-top: 32px;
   margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .card__text {
   z-index: 2;
-  font-size: 20px;
-  color: #fff;
+  margin-right: 19px;
   margin-bottom: 27px;
   margin-left: 19px;
+  color: #fff;
+  font-size: 20px;
   line-height: 1.2;
-  margin-right: 19px;
 }
 
 .card_type_film {
-  position: relative; /* Обязательно указываем позиционирование родительского элемента */
-  width: 100%; /* Ширина секции */
-  background-image: url(../images/card-lot-01.jpg); /* Добавляем фоновое изображение */
-  background-repeat: no-repeat; /* Изображение не повторяется */
-  background-position: center; /* Центрируем изображение */
+  position: relative;
+  width: 100%;
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .card_type_book {
-  position: relative; /* Обязательно указываем позиционирование родительского элемента */
-  width: 100%; /* Ширина секции */
-  background-image: url(../images/card-lot-02.jpg); /* Добавляем фоновое изображение */
-  background-repeat: no-repeat; /* Изображение не повторяется */
-  background-position: center; /* Центрируем изображение */
+  position: relative;
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .card_type_picture {
-  position: relative; /* Обязательно указываем позиционирование родительского элемента */
-  width: 100%; /* Ширина секции */
-  background-image: url(../images/card-lot-03.jpg); /* Добавляем фоновое изображение */
-  background-repeat: no-repeat; /* Изображение не повторяется */
-  background-position: center; /* Центрируем изображение */
+  position: relative;
+  width: 100%;
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .lots__look-more-link {
   display: block;
   margin-top: 31px;
-  font-size: 20px;
   margin-left: 44px;
+  font-size: 20px;
 }

@@ -36,6 +36,7 @@
 .header__links-list-item {
   margin-right: 30px;
 }
+
 .header__links-list-item:first-child {
   list-style: none;
 }
@@ -134,6 +135,7 @@
   display: inline-block;
   margin-left: 30px;
 }
+
 .cover_tebe_heading {
   align-self: center;
   margin-top: -3px;

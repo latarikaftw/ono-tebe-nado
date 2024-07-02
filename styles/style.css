@@ -1,17 +1,11 @@
 .header {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
-
-  font-size: 18px;
-}
-
-.header__menu {
-  display: flex;
   align-items: center;
   width: 100%;
   margin-top: 94px;
   margin-bottom: 95px;
+  font-size: 18px;
 }
 
 .header__links-container,
@@ -31,6 +25,7 @@
 .header__links-list-item {
   margin-right: 30px;
 }
+
 .header__links-list-item:first-child {
   list-style: none;
 }
@@ -54,18 +49,15 @@
   display: block;
   width: 134px;
   height: 104px;
-  margin-left: 0px;
   margin-right: 193px;
+  margin-left: 0px;
 }
 
-.header__address {
+.address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 450px;
-}
-
-.address {
   font-size: 18px;
   font-style: normal;
   line-height: 1.3;
@@ -129,6 +121,7 @@
   display: inline-block;
   margin-left: 30px;
 }
+
 .cover_tebe_heading {
   align-self: center;
   margin-bottom: 0px;
@@ -163,7 +156,6 @@
   font-weight: normal;
   font-size: 22px;
   text-align: left;
-  text-transform: uppercase;
   text-transform: uppercase;
   word-spacing: 19px;
 }
@@ -220,14 +212,14 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
   min-height: 563px;
   padding: 20px;
   background-color: #fff;
-  position: relative;
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -288,25 +280,23 @@
 
 .circle-container {
   z-index: 1;
+  display: flex;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background-color: black;
-  display: flex;
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  justify-content: start;
-  align-items: start;
 }
 
 .about__logo-image {
+  z-index: 2;
   grid-column: 1 / 1;
   grid-row: 1 / 1;
-  z-index: 2;
   width: 146px;
   height: 120px;
-  margin-left: 48px;
-  margin-top: 61px;
 }
 
 .about__title {
@@ -344,10 +334,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 185px;
-  margin-bottom: 84px;
   min-width: 237px;
+  margin-top: 185px;
   margin-right: 10px;
+  margin-bottom: 84px;
   margin-left: 52px;
   padding-right: 0px;
   padding-left: 0px;
